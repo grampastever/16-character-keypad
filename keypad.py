@@ -1,5 +1,6 @@
-# the following program interfaces a 4x4 button keypad
+# The following program interfaces a 4x4 button keypad
 #with the Rpi Pico using micropython running in Thonny
+# Data is printed to the Thonny shell.
 
 from machine import Pin
 from utime import sleep
