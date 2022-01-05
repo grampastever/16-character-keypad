@@ -4,9 +4,11 @@
 from machine import Pin
 from utime import sleep
 
+#Pico pins GPIO 4, 5, 6 and 7 correspond with pins 4, 3, 2, 1 of the keypad (see attached datasheet in readme file)
 for i in range(4,8):
     Pin(i, Pin.IN, Pin.PULL_DOWN)
 
+#Pico pins GPIO 0, 1, 2 and 3 correspond with pins 8, 7, 6, 5 of the keypad (see attached datasheet in readme file)
 for i in range(4):
     Pin(i, Pin.OUT, Pin.PULL_DOWN, value=0)
 
